@@ -1,0 +1,76 @@
+@font-face {
+  font-family: "Jost";
+  src: url("fonts/Jost/static/Jost-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Playfair";
+  src: url("fonts/Playfair_Display/static/PlayfairDisplay-Regular.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("fonts/Roboto/static/Roboto_Condensed-Regular.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: antiquewhite;
+}
+section {
+  display: block;
+  margin: 0 auto;
+  padding: 40px;
+  width: 50%;
+  max-width: 1440px;
+  background-color: white;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+#first,
+#second,
+#third {
+  margin: 20px 0;
+}
+
+#first {
+  font-family: "Jost", sans-serif;
+}
+
+#second {
+  font-family: "Playfair", sans-serif;
+}
+
+#third {
+  font-family: "Roboto", sans-serif;
+}
+
+.filmFrames {
+  display: flex;
+  flex-direction: column;
+}
+.filmFrames img {
+  height: 200px;
+  width: 300px;
+  margin: 10px 0px;
+  border-radius: 10px;
+}
+td,
+th {
+  border: 1px solid black;
+  text-align: left;
+  padding: 5px 3px;
+}
