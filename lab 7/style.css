@@ -1,0 +1,160 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  background: rgb(52, 206, 142);
+  height: 100px;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  line-height: 100px;
+  margin: 0;
+}
+
+.head-exercise {
+  width: 100%;
+  background: rgb(36, 145, 100);
+  text-align: center;
+  padding: 10px;
+}
+
+article {
+  padding: 10px;
+  margin: 10px;
+  background: rgba(16, 233, 215, 0.178);
+  flex: 1 1 32%;
+}
+
+.first-third {
+  display: flex;
+}
+
+.fourth-tenth {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.fourth-sixth {
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.seventh-tenth {
+  flex: 2 1 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.seventh-tenth article {
+  flex: 1 1 32%;
+}
+
+.flex-guide {
+  margin: 50px 10%;
+}
+
+.flex-menu {
+  display: flex;
+  flex-direction: row;
+  margin: 10px 0;
+}
+
+.flex-menu__element {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  padding: 10px;
+  aspect-ratio: 1 / 1;
+  border: 3px solid rgba(16, 233, 215, 0.178);
+  margin-right: 10px;
+}
+
+.flex-menu__element:hover {
+  background: rgba(150, 233, 215, 0.178);
+  cursor: pointer;
+}
+
+.flex-menu__element--active {
+  background: rgba(16, 233, 215, 0.178);
+  border: none;
+}
+.flex-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.example {
+  width: 40%;
+  border: 3px solid rgba(16, 233, 215, 0.178);
+  padding: 5px;
+}
+
+.css {
+  width: 40%;
+  background-color: #444444;
+  color: white;
+  padding: 20px;
+  font-size: 16px;
+}
+
+.flex-explanation {
+  margin: 10px 0;
+
+  p {
+    margin-bottom: 10px;
+  }
+  ul {
+    margin: 0 0 10px 30px;
+  }
+}
+
+.parent {
+  display: flex;
+  height: 100%;
+  border: 2px dotted rgba(16, 233, 215, 0.178);
+}
+
+.child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  background-color: rgba(16, 233, 215, 0.178);
+  margin-right: 3px;
+}
+
+.children-shrink {
+  width: 40%;
+}
+
+.child--active {
+  background: rgba(16, 100, 100, 0.5);
+}
+
+#child-grow {
+  flex-grow: 0;
+}
+
+#child-shrink {
+  flex-shrink: 0;
+}
+
+#child-basis {
+  flex-basis: 0;
+}

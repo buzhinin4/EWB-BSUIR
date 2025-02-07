@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>lab7</title>
+  </head>
+  <body>
+    <header>
+      <h1>Изучаем flexbox</h1>
+    </header>
+    <section class="main-exercise">
+      <div><h2 class="head-exercise">main</h2></div>
+      <div class="first-third">
+        <article>
+          <h2>1</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta,
+            perspiciatis quo praesentium harum quibusdam nostrum aliquam
+            voluptates ullam aliquid, dolor consectetur expedita, nisi mollitia
+            reiciendis deleniti sit natus quos est.
+          </p>
+        </article>
+        <article>
+          <h2>2</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta,
+            perspiciatis quo praesentium harum quibusdam nostrum aliquam
+            voluptates ullam aliquid, dolor consectetur expedita, nisi mollitia
+            reiciendis deleniti sit natus quos est.
+          </p>
+        </article>
+        <article>
+          <h2>3</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta,
+            perspiciatis quo praesentium harum quibusdam nostrum aliquam
+            voluptates ullam aliquid, dolor consectetur expedita, nisi mollitia
+            reiciendis deleniti sit natus quos est.
+          </p>
+        </article>
+      </div>
+      <div class="fourth-tenth">
+        <div class="fourth-sixth">
+          <article>
+            <h2>4</h2>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta,
+              perspiciatis quo praesentium harum quibusdam nostrum aliquam
+              voluptates ullam aliquid, dolor consectetur expedita, nisi
+              mollitia reiciendis deleniti sit natus quos est.
+            </p>
+          </article>
+          <article>
+            <h2>5</h2>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta,
+              perspiciatis quo praesentium harum quibusdam nostrum aliquam
+              voluptates ullam aliquid, dolor consectetur expedita, nisi
+              mollitia reiciendis deleniti sit natus quos est.
+            </p>
+          </article>
+          <article>
+            <h2>6</h2>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta,
+              perspiciatis quo praesentium harum quibusdam nostrum aliquam
+              voluptates ullam aliquid, dolor consectetur expedita, nisi
+              mollitia reiciendis deleniti sit natus quos est.
+            </p>
+          </article>
+        </div>
+        <div class="seventh-tenth">
+          <article>
+            <h2>7</h2>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta,
+              perspiciatis quo praesentium harum quibusdam nostrum aliquam
+              voluptates ullam aliquid, dolor consectetur expedita, nisi
+              mollitia reiciendis deleniti sit natus quos est.
+            </p>
+          </article>
+          <article>
+            <h2>8</h2>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta,
+              perspiciatis quo praesentium harum quibusdam nostrum aliquam
+              voluptates ullam aliquid, dolor consectetur expedita, nisi
+              mollitia reiciendis deleniti sit natus quos est.
+            </p>
+          </article>
+          <article>
+            <h2>9</h2>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta,
+              perspiciatis quo praesentium harum quibusdam nostrum aliquam
+              voluptates ullam aliquid, dolor consectetur expedita, nisi
+              mollitia reiciendis deleniti sit natus quos est.
+            </p>
+          </article>
+          <article>
+            <h2>10</h2>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta,
+              perspiciatis quo praesentium harum quibusdam nostrum aliquam
+              voluptates ullam aliquid, dolor consectetur expedita, nisi
+              mollitia reiciendis deleniti sit natus quos est.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="addition-exercise">
+      <div class="head-exercise"><h2>Additional</h2></div>
+      <div class="flex-guide">
+        <h3>flex-grow</h3>
+        <div class="flex-menu">
+          <div class="flex-menu__element flex-menu__element--active">0</div>
+          <div class="flex-menu__element">1</div>
+        </div>
+        <div class="flex-content">
+          <div class="example">
+            <div class="parent">
+              <div class="child">1</div>
+              <div class="child">2</div>
+              <div class="child child--active" id="child-grow">3</div>
+              <div class="child">4</div>
+            </div>
+          </div>
+          <div class="css">
+            <pre id="css-grow">
+    .parent {
+      display: flex;
+      height: 100%;
+    }
+    .child-active {
+      <mark>flex-grow: 0;</mark>
+    }
+            </pre>
+          </div>
+        </div>
+        <div class="flex-explanation">
+          <p>
+            Свойство flex-grow задает коэффициент роста flex для заданного
+            числа. Отрицательное значение не валидно.
+          </p>
+          <p><b>Применяется к:</b> flex элементам.</p>
+          <p><b>Значение по умолчанию:</b> 0.</p>
+        </div>
+      </div>
+      <div class="flex-guide">
+        <h3>flex-shrink</h3>
+        <div class="flex-menu">
+          <div class="flex-menu__element flex-menu__element--active">0</div>
+          <div class="flex-menu__element">1</div>
+        </div>
+        <div class="flex-content">
+          <div class="example">
+            <div class="parent">
+              <div class="child children-shrink">1</div>
+              <div class="child children-shrink">2</div>
+              <div
+                class="child child--active children-shrink"
+                id="child-shrink"
+              >
+                3
+              </div>
+              <div class="child children-shrink">4</div>
+            </div>
+          </div>
+          <div class="css">
+            <pre id="css-shrink">
+    .parent {
+      display: flex;
+      height: 100%;
+    }
+    .child {
+      width: 40%;
+    }
+    .child-active {
+      <mark>flex-shrink: 0;</mark>
+    }
+            </pre>
+          </div>
+        </div>
+        <div class="flex-explanation">
+          <p>
+            Свойство flex-shrink задает коэффициент сжатия flex с заданным
+            числом. Отрицательное значение не валидно.
+          </p>
+          <p><b>Применяется к:</b> flex элементам.</p>
+          <p><b>Значение по умолчанию:</b> 1.</p>
+        </div>
+      </div>
+      <div class="flex-guide">
+        <h3>flex-basis</h3>
+        <div class="flex-menu">
+          <div class="flex-menu__element flex-menu__element--active">0</div>
+          <div class="flex-menu__element">30%</div>
+          <div class="flex-menu__element">50%</div>
+          <div class="flex-menu__element">content</div>
+          <div class="flex-menu__element">auto</div>
+        </div>
+        <div class="flex-content">
+          <div class="example">
+            <div class="parent">
+              <div class="child">1</div>
+              <div class="child">2</div>
+              <div class="child child--active" id="child-basis">3</div>
+              <div class="child">4</div>
+            </div>
+          </div>
+          <div class="css">
+            <pre id="css-basis">
+    .parent {
+      display: flex;
+      height: 100%;
+    }
+    .child-active {
+      <mark>flex-basis: content;</mark>
+    }
+            </pre>
+          </div>
+        </div>
+        <div class="flex-explanation">
+          <p>
+            Свойство flex-basis определяет основу флекса, которая является
+            начальным размером элемента. Похоже на свойства width и height, к
+            которым добавляется содержимое элемента.
+          </p>
+          <p>Условности:</p>
+          <ul>
+            <li>
+              <b>flex-basis: 0:</b> Устанавливает начальный размер flex-элемента
+              в 0. Это означает, что элемент не будет занимать никакого
+              пространства по умолчанию, и его размер будет определяться только
+              свойством flex-grow и свободным пространством в контейнере.
+            </li>
+            <li>
+              <b>flex-basis: content:</b> Размер элемента определяется,
+              основываясь исключительно на содержимом и примененных стилях. Это
+              может обеспечить большее внимание к тому, как текст или другие
+              элементы внутри блока влияют на его размер.
+            </li>
+            <li>
+              <b>flex-basis: auto: </b>Размер элемента также зависит от его
+              содержимого, но может включать дополнительные факторы, такие как
+              задания по ширине или высоте. Например, если задана фиксированная
+              ширина, она будет использоваться вместо размера содержимого.
+            </li>
+          </ul>
+          <p><b>Применяется к:</b> flex элементам.</p>
+          <p><b>Значение по умолчанию:</b> auto.</p>
+        </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
