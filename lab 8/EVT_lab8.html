@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>grid</title>
+  </head>
+  <body>
+    <header>
+      <h1>Изучаем grid</h1>
+    </header>
+    <div><h2 class="head-exercise">main</h2></div>
+    <div class="grid">
+      <article>
+        <h2>1</h2>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio maxime
+          incidunt perferendis molestiae impedit molestias, harum obcaecati
+          sequi, quae similique sapiente ea quibusdam cum rerum, sit error iure
+          nihil adipisci. Lorem ipsum dolor, sit amet consectetur adipisicing
+          elit. Optio maxime incidunt perferendis molestiae impedit molestias,
+          harum obcaecati sequi, quae similique sapiente ea quibusdam cum rerum,
+          sit error iure nihil adipisci.
+        </p>
+      </article>
+      <article>
+        <h2>2</h2>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio maxime
+          incidunt perferendis molestiae impedit molestias, harum obcaecati
+          sequi, quae similique sapiente ea quibusdam cum rerum, sit error iure
+          nihil adipisci.
+        </p>
+      </article>
+      <article>
+        <h2>3</h2>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio maxime
+          incidunt perferendis molestiae impedit molestias, harum obcaecati
+          sequi, quae similique sapiente ea quibusdam cum rerum, sit error iure
+          nihil adipisci. Lorem ipsum dolor, sit amet consectetur adipisicing
+          elit. Optio maxime incidunt perferendis molestiae impedit molestias,
+          harum obcaecati sequi, quae similique sapiente ea quibusdam cum rerum,
+          sit error iure nihil adipisci.
+        </p>
+      </article>
+      <article>
+        <h2>4</h2>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio maxime
+          incidunt perferendis molestiae impedit molestias, harum obcaecati
+          sequi, quae similique sapiente ea quibusdam cum rerum, sit error iure
+          nihil adipisci.
+        </p>
+      </article>
+      <article>
+        <h2>5</h2>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio maxime
+          incidunt perferendis molestiae impedit molestias, harum obcaecati
+          sequi, quae similique sapiente ea quibusdam cum rerum, sit error iure
+          nihil adipisci.
+        </p>
+      </article>
+      <article>
+        <h2>6</h2>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio maxime
+          incidunt perferendis molestiae impedit molestias, harum obcaecati
+          sequi, quae similique sapiente ea quibusdam cum rerum, sit error iure
+          nihil adipisci.
+        </p>
+      </article>
+      <article>
+        <h2>7</h2>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio maxime
+          incidunt perferendis molestiae impedit molestias, harum obcaecati
+          sequi, quae similique sapiente ea quibusdam cum rerum, sit error iure
+          nihil adipisci.
+        </p>
+      </article>
+      <article>
+        <h2>8</h2>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio maxime
+          incidunt perferendis molestiae impedit molestias, harum obcaecati
+          sequi, quae similique sapiente ea quibusdam cum rerum, sit error iure
+          nihil adipisci.
+        </p>
+      </article>
+      <article>
+        <h2>9</h2>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio maxime
+          incidunt perferendis molestiae impedit molestias, harum obcaecati
+          sequi, quae similique sapiente ea quibusdam cum rerum, sit error iure
+          nihil adipisci. Lorem ipsum dolor, sit amet consectetur adipisicing
+          elit. Optio maxime incidunt perferendis molestiae impedit molestias,
+          harum obcaecati sequi, quae similique sapiente ea quibusdam cum rerum,
+          sit error iure nihil adipisci.
+        </p>
+      </article>
+      <article>
+        <h2>10</h2>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio maxime
+          incidunt perferendis molestiae impedit molestias, harum obcaecati
+          sequi, quae similique sapiente ea quibusdam cum rerum, sit error iure
+          nihil adipisci.
+        </p>
+      </article>
+    </div>
+    <section class="addition-exercise">
+      <div class="head-exercise"><h2>Additional</h2></div>
+      <div class="grid-guide">
+        <h3>grid-auto-flow</h3>
+        <div class="grid-menu">
+          <div class="grid-menu__element grid-menu__element--active">row</div>
+          <div class="grid-menu__element">column</div>
+          <div class="grid-menu__element">dense</div>
+        </div>
+        <div class="grid-content">
+          <div class="example">
+            <div class="parent" id="parent-flow">
+              <div class="child">1</div>
+              <div class="child">2</div>
+              <div class="child">3</div>
+              <div class="child">4</div>
+              <div class="child">5</div>
+              <div class="child">6</div>
+              <div class="child">7</div>
+              <div class="child">8</div>
+              <div class="child">9</div>
+            </div>
+          </div>
+          <div class="css">
+            <pre id="css-flow">
+    .parent {
+        display: grid;
+        <mark>grid-auto-flow: row;</mark>
+    }
+            </pre>
+          </div>
+        </div>
+        <div class="grid-explanation">
+          <p>
+            Свойство grid-auto-flow управляет тем, как работает алгоритм
+            автоматического размещения, точно указывая, как элементы попадают в
+            сетку.
+          </p>
+          <ul>
+            <li>
+              <b>row: </b>Алгоритм размещает элементы, заполняя каждую строку
+              поочередно, добавляя новые строки по мере необходимости.
+            </li>
+            <li>
+              <b>column: </b>Алгоритм помещает элементы, заполняя каждый столбец
+              поочередно, добавляя по мере необходимости новые столбцы.
+            </li>
+            <li>
+              <b>dense</b>алгоритм использует «плотный» алгоритм упаковки,
+              который пытается заполнить дыры в сетке, если позже появятся более
+              мелкие элементы. Это может привести к тому, что элементы появятся
+              не по порядку, но при этом заполнят отверстия, оставленные более
+              крупными элементами.
+            </li>
+          </ul>
+          <p><b>Наследуется:</b> нет.</p>
+          <p><b>Применяется к:</b> grid контейнерам.</p>
+          <p><b>Значение по умолчанию:</b> row.</p>
+        </div>
+      </div>
+      <div class="grid-guide">
+        <h3>justify-self</h3>
+        <div class="grid-menu">
+          <div class="grid-menu__element grid-menu__element--active">start</div>
+          <div class="grid-menu__element">end</div>
+          <div class="grid-menu__element">center</div>
+          <div class="grid-menu__element">stretch</div>
+        </div>
+        <div class="grid-content">
+          <div class="example">
+            <div class="parent">
+              <div class="child child--active" id="child-justify">1</div>
+              <div class="child">2</div>
+              <div class="child">3</div>
+              <div class="child">4</div>
+              <div class="child">5</div>
+              <div class="child">6</div>
+              <div class="child">7</div>
+              <div class="child">8</div>
+              <div class="child">9</div>
+            </div>
+          </div>
+          <div class="css">
+            <pre id="css-justify">
+    .parent {
+        display: grid;
+    }
+    .child {
+        <mark>justify-self: start;</mark>
+    }
+            </pre>
+          </div>
+        </div>
+        <div class="grid-explanation">
+          <p>
+            Выравнивает содержимое элемента вдоль оси строки (в отличии от
+            align-self, который выравнивает вдоль оси столбца).
+          </p>
+          <ul>
+            <li>
+              <b>start: </b>Выравнивает содержимое по левой части области.
+            </li>
+            <li><b>end: </b>Выравнивает содержимое по правой части области.</li>
+            <li><b>center: </b>Выравнивает содержимое по центру области.</li>
+            <li>
+              <b>stretch: </b>Заполняет всю ширину области (по умолчанию).
+            </li>
+          </ul>
+          <p><b>Наследуется:</b> нет.</p>
+          <p><b>Применяется к:</b> содержимому внутри отдельного элемента.</p>
+          <p><b>Значение по умолчанию:</b> auto.</p>
+        </div>
+      </div>
+      <div class="grid-guide">
+        <h3>align-self</h3>
+        <div class="grid-menu">
+          <div class="grid-menu__element grid-menu__element--active">start</div>
+          <div class="grid-menu__element">end</div>
+          <div class="grid-menu__element">center</div>
+          <div class="grid-menu__element">stretch</div>
+        </div>
+        <div class="grid-content">
+          <div class="example">
+            <div class="parent">
+              <div class="child">1</div>
+              <div class="child">2</div>
+              <div class="child child--active" id="child-align">3</div>
+              <div class="child">4</div>
+              <div class="child">5</div>
+              <div class="child">6</div>
+              <div class="child">7</div>
+              <div class="child">8</div>
+              <div class="child">9</div>
+            </div>
+          </div>
+          <div class="css">
+            <pre id="css-align">
+    .parent {
+        display: grid;
+    }
+    .child {
+        <mark>align-self: start;</mark>
+    }
+            </pre>
+          </div>
+        </div>
+        <div class="grid-explanation">
+          <p>
+            Выравнивает содержимое элемента вдоль оси столбца (в отличии от
+            justify-self, который выравнивает вдоль оси строки).
+          </p>
+          <ul>
+            <li>
+              <b>start: </b>Выравнивает содержимое по левой части области.
+            </li>
+            <li><b>end: </b>Выравнивает содержимое по правой части области.</li>
+            <li><b>center: </b>Выравнивает содержимое по центру области.</li>
+            <li>
+              <b>stretch: </b>Заполняет всю ширину области (по умолчанию).
+            </li>
+          </ul>
+          <p><b>Наследуется:</b> нет.</p>
+          <p><b>Применяется к:</b> содержимому внутри отдельного элемента.</p>
+          <p><b>Значение по умолчанию:</b> auto.</p>
+        </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
