@@ -1,4 +1,11 @@
 @font-face {
+  font-family: "Chicken_paw";
+  src: url("fonts/Chicken_paw-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: "Jost";
   src: url("fonts/Jost/static/Jost-Regular.ttf") format("truetype");
   font-weight: normal;
@@ -40,6 +47,11 @@ a {
   text-decoration: none;
   color: black;
 }
+
+#preview {
+  font-family: "Chicken_paw", sans-serif;
+}
+
 #first,
 #second,
 #third {
