@@ -1,0 +1,108 @@
+.header,
+.footer {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  left: 0;
+  width: 100%;
+  padding: 10px 20px;
+  background-color: rgb(52, 206, 142);
+}
+
+.header {
+  top: 0;
+}
+
+.footer {
+  bottom: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+article.article p {
+  font-style: normal !important;
+}
+
+.blockquote {
+  font-style: italic;
+}
+
+.wrapper {
+  max-width: unset !important;
+}
+
+.main {
+  margin: 50px 0;
+}
+
+article.article img {
+  height: auto !important;
+  max-width: 150px;
+}
+
+article.article:nth-of-type(n) img {
+  float: left;
+}
+
+article.article:nth-of-type(2n) img {
+  float: right;
+}
+
+article.article p::first-letter {
+  font-size: 2em;
+  color: #ff5733;
+  font-weight: bold;
+}
+
+a {
+  cursor: default !important;
+
+  &::before {
+    content: "";
+    padding: 3px;
+  }
+}
+
+.word {
+  position: sticky;
+  width: 100px;
+  top: 20px;
+  z-index: 100;
+}
+
+p.word.first {
+  background-color: red;
+  color: white;
+  top: 20px;
+  left: 0px;
+}
+
+p.word.second {
+  background-color: blue;
+  color: white;
+  top: 20px;
+  left: 100px;
+}
+
+p.word.third {
+  background-color: green;
+  color: white;
+  top: 20px;
+  left: 200px;
+}
+
+p.word.fourth {
+  background-color: black;
+  color: white;
+  top: 20px;
+  left: 300px;
+}
+
+p.word.fifth {
+  background-color: yellow;
+  top: 20px;
+  left: 400px;
+}
